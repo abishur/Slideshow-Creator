@@ -26,7 +26,7 @@ The transition duration can also be manually set, with -c flag.  Though if manua
 
 All pictures created will be automatically deleted unless the -k flag is listed in which case the pictures will remain even after the slideshow video is created.   This command will create a slideshow where each image is shown for 5 seconds and each transition last for 2 seconds and will NOT delete the pictures when finished
    
-   py slideshow.py -i VIDEO.mp4 -d 5 -c 2 -k
+    py slideshow.py -i VIDEO.mp4 -d 5 -c 2 -k
 
 Currently there are two transition types.  By default a crossfade transition will be used but by using the -t 0 flag then a hard cut to the next picture will be used instead.  This command will create a slideshow where each image is shown for 5 seconds with no transition between each image
     
