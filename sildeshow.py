@@ -49,7 +49,7 @@ try:
     parser.add_argument('-f', '--ffmpegpath', dest='FFmpegPath', default=os.getcwd(), help="specifies the location of ffmpeg, necessary if ffmpeg is not in defined in your PATH")
     parser.add_argument('-i', '--inputfile', dest='InputPath', required=True, help="specifies the video file to turn into a slide show")
     parser.add_argument('-o', '--outputpath', dest='OutputPath', default=os.getcwd(), help="specifies the location and filename of the directory to place video in")
-    #parser.add_argument('-s', '--startnum', dest='StartNumber', default="0", help="optionally allows you start as a specific file number (as defined by filepattern)")
+    parser.add_argument('-s', '--startnum', dest='StartNumber', default="0", help="optionally allows you start as a specific file number (as defined by filepattern)")
     parser.add_argument('-d', '--duration', dest='Duration', type=int, default=-1, help="specifies how long each picture should be shown, the default is automatically calculated.")
     parser.add_argument('-c', '--crossfade', dest='CrossFade', type=float, default=-1, help="specifies the length of the crossfade affect, the default is automatically calculated.")
     parser.add_argument('-h', '--height', dest='OutHeight', type=int, default=0, help="Specifies the output height.  defaults to input video's height")
