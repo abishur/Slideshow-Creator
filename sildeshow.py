@@ -17,7 +17,7 @@ import math
 
 
 #Update revisions for sanity's sake please future me!
-revisionNumber=1.5
+revisionNumber=1.6
 
 #This line and the function that follows will sort images correctly
 #instead of putting 1000 between 100 and 101 or 1110 between 111 and 112
@@ -151,7 +151,7 @@ if args.verbose:
     print ("Slide Transition Type is set to: {0}".format(args.TransitionType))
     
 #If a Duration has not been set assume a 3 second duration
-if ((args.Duration == -1):
+if (args.Duration == -1):
     args.Duration = 3
    
 #turn video file into images using desired image duration rate
