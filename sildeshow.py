@@ -38,7 +38,7 @@ def get_sec(time_str):
     h, m, s = time_str.split(':')
     return int(h) * 3600 + int(m) * 60 + int(s)
 
-def __name__ == "__main__":
+if __name__ == "__main__":
     #Parse through the command line arguments
     #Note that the only required input is the FilePattern.  Everything else will default to some value.
     #It probably won't be the value you want, but it will be *A* value.
